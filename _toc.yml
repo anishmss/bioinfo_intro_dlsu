@@ -1,0 +1,34 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Introduction
+    chapters:
+    - file: chapters/introduction/intro_to_bioinfo
+  - caption: The Very Basics of Molecular Biology of the Cell
+    chapters:
+    - file: chapters/basic_microbiology/basic_molecular_bio
+    - file: chapters/basic_microbiology/central_dogma
+    - file: chapters/basic_microbiology/hands_on_central_dogma
+  - caption: An Introduction to Genomes
+    chapters:
+    - file: chapters/intro_to_genomes/genomes.md
+    - file: chapters/intro_to_genomes/hands_on_dinucleotide.md
+  - caption: Genome Annotation and Hidden Markov Models
+    chapters:
+    - file: chapters/hmm/hmm_intro
+    - file: chapters/hmm/hands_on_cpg_island
+  - caption: Sequence alignment
+    chapters:
+    - file: chapters/sequence_alignment/sequence_alignment_what_and_why
+  - caption: Measuring and comparing gene expression 
+    chapters:
+    - file: chapters/rna_seq/rna_seq_intro.md
+  - caption: Phylogenetic analysis
+    chapters:
+    - file: chapters/phylogenetic/phylogenetic_analysis
+  - caption: Genome-wide association studies
+    chapters:
+    - file: chapters/gwas/gwas_intro
