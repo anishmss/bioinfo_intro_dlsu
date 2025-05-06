@@ -5,9 +5,9 @@ Biology is the study of life.
 There is an amazing diversity of life -- you'd be forgiven for thinking there was nothing common between you and, say, a penguin roaming about in the south pole, or a bacterium somewhere deep in your gut happily digesting the complex carbohydrate you had for lunch. 
 If the nature of every organism was governed by its own set of specific rules, biology would be an impossible science.
 
-Luckily, it is not as unweildly, thanks to one necessary condition that defines living things: that they are made of cell(s). (Actually it should read *living* cells, which makes the definition cylical, but let's not open that can of worms.)
+Luckily, it is not as unweildly, thanks to one necessary condition that defines living things: that they are made of cell(s). (Actually, *living* cells, which makes the definition cylical, but let's not open that can of worms.)
 
-Biology is therefore mostly the study of cells: how they function, how they dysfunction, what is their origin story, and so on.
+Modern biology is therefore mostly the study of cells: how they function, how they dysfunction, what is their origin story, and so on.
 
 Luckily for us, the underlying processes that govern the functioning of all cells are largely the same. Indeed, some processes that happen inside your cells also happen in a bacterium. Of course, there are many differences among different kinds of cells, which has allowed for different flavors of biology to flourish.
 But let us first focus on the commonalities.
@@ -52,7 +52,7 @@ Like with RNA, we could also consider the structure of proteins, but for this co
 ## References
 
 - Cell biology by the numbers https://book.bionumbers.org/
-{cite}`perez2011python`
+
 ```{bibliography} 
 :filter: docname in docnames
 ```

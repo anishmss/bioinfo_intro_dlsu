@@ -1,4 +1,4 @@
-# Cells as information systems 
+# A cell is an information system 
 A cell can be seen as an information system with DNA, RNA, and proteins as the key players. 
 There are some differences in how this works in prokaryotic vs. eukaryotic cells. 
 Let's take the simpler case first. 

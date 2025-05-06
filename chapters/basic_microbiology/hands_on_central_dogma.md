@@ -1,6 +1,6 @@
-# Hands-on Activity: Central dogma of life
+# Hands-on activity: Central dogma of life in our own cells
 
-## Human genome
+## Human genome, transcriptome, proteome
 
 There are multiple resources listed towards the bottom of this page, which provide information about the human genome.
 For example, you can download information about the human genome, transcriptome, and proteome:
@@ -8,17 +8,17 @@ from [RefSeq](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/) or
 
 Using these resources, report on the following questions. 
 
-- How many genes does the human genome have ?
-- How big is the human transcriptome?
-- What are the different classes of RNA encoded in the human genome?
-- How many protein-coding genes are there?
-- How big is the human proteome?
-- Plot the distribution of lengths of gene models.
+- How many genes are there in the human genome ?
+- How many transcripts are there in the human transcriptome?
+- What are the different kinds/classes of RNA present in the human transcriptome ?
+- How many protein-coding genes are there in the human genome?
+- How many proteins are there in the human proteome?
+- Plot the distribution of lengths of genes.
 - Plot the distribution of the length of exons.
 - Plot the distribution of the length of introns.
 
 ## Greatest hits of the human genome
-The following interesting article, although maybe a bit outdated, compiled a list of the top 10 most studied genes in the human genome. Choose 3 out of the 10; and for each gene, answer the following questions.
+Although maybe a bit outdated, {cite}`Dolgin2017-ua` compiled a list of the top 10 most studied genes in the human genome. Choose 3 out of the 10; and for each gene, answer the following questions.
 
 ### Questions
 
@@ -40,5 +40,6 @@ The following interesting article, although maybe a bit outdated, compiled a lis
 
 ## References
 
-Elie Dolgin, The most popular genes in the human genome, A tour through the most studied genes in biology reveals some surprises, Nature, 551, 427-431 (2017)
-doi: https://doi.org/10.1038/d41586-017-07291-9
+```{bibliography}
+:filter: docname in docnames
+```

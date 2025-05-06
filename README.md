@@ -1,7 +1,7 @@
 This repository contains material for an introductory course in bioinformatics offered to graduate or higher undergraduate computer science students at DLSU Manila. 
 
-The content is structured as a Jupyter lab. 
-It is hosted at: 
+The content is structured as a Jupyter Book. 
+It is hosted at: http://a-transposable-element.com/bioinfo_intro_dlsu/
 
 Errors, concerns, questions?
 Please contact:
