@@ -1,4 +1,4 @@
-# What is bioinformatics?
+# What is bioinformatics, and why is it important?
 
 ## What's in a name? 
 There are differing opinions on what makes up the field of bioinformatics, what with similarly named overlapping fields like computational biology, mathematical biology, systems biology etc.
@@ -47,12 +47,6 @@ However, Sanger sequencing is very slow and expensive, and not really suited to 
 Sometime around mid-late 2000s, we started seeing sequencer with dramatically higher throughput.
 With prices coming down, this has resulted in a rush of sequence-your-favorite-organism projects, all over the world.
 
-The second interesting thing is the versatility of this technology. 
-Although the biochemistry of sequencers are only good to read DNA, 
-clever people have come up with ways to utilize sequencers to measure all sorts of biological stuff.
-
-
-
 ```{figure} ./images/History_of_sequencing_technology.jpg 
 ---
 width: 800px
@@ -61,6 +55,14 @@ name: sequencing_history
 History of sequencing technology
 Source: https://en.wikipedia.org/wiki/DNA_sequencing#/media/File:History_of_sequencing_technology.jpg
 ```
+
+The second interesting thing is the versatility of this technology. 
+Although the biochemistry of sequencers are only good to read DNA, 
+clever people have come up with ways to utilize sequencers to measure all sorts of biological stuff.
+
+
+
+
 
 ### To see, we need to more than look
 Each run of modern-day sequencer can produce tons of sequence data. 
@@ -84,6 +86,17 @@ So how do we go from mountains of sequence data to insights into biological ques
 It really depends on the question at hand, but it general, you will first need efficient tools to process the sequence data into some form that can be fed into statistical/machine-learning/artificial intelligence (what's the difference anyway?) model, and then use those models to find patterns, make prediction, draw inferences, etc.
 
 Being able to do this requires knowledge of data-structures, algorithms, statistics, machine learning, what we collectively call bioinformatics. 
+
+### And, oh, the sights we have seen !
+
+Thanks to sequence bioinformatic methods applies to tons of data, we have a super high resolution view of biological systems. Here are just a few of the incredible things we have been able to do in the past decade or so:
+
+- Track and combat the SARS-Cov-2 pandemic {cite}`Attwood2022-tx`
+- Catalog and characterize genetic mutations in cancers {cite}`Cornish2024-kp`
+- Identify genes and genetic variations associated with important traits in crops{cite}`Wing2018-uj`
+- Trace our own ancestry and history{cite}`Wang2021-ee,Hellenthal2014-eo`
+- Better understand our own genomes {cite}`ENCODE-Project-Consortium2012-ce`
+- Characterize microbiome  and connect them to health and diseases {cite}`Hou2022-vl`
 
 ## Further reading
 {cite}`Hagen2000-nj` and {cite}`Gauthier2019-im` are two longer accounts of the history of bioinformatics.
