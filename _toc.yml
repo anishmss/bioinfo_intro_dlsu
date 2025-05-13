@@ -9,9 +9,9 @@ parts:
     - file: chapters/introduction/intro_to_bioinfo
   - caption: The Very Basics of Molecular Biology of the Cell
     chapters:
-    - file: chapters/basic_microbiology/basic_molecular_bio
-    - file: chapters/basic_microbiology/central_dogma
-    - file: chapters/basic_microbiology/hands_on_central_dogma
+    - file: chapters/basic_mol_bio/basic_molecular_bio
+    - file: chapters/basic_mol_bio/central_dogma
+    - file: chapters/basic_mol_bio/hands_on_central_dogma
   - caption: An Introduction to Genomes
     chapters:
     - file: chapters/intro_to_genomes/genomes.md

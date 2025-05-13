@@ -4,9 +4,13 @@
 Anish M.S. Shrestha \
 Bioinformatics Lab, 
 AdRIC, DLSU Manila \
-anish.shrestha==at==dlsu.edu.ph \
 www.bioinfodlsu.com \
 www.a-transposable-element.com
+
+Errors, concerns, issues, questions?
+Please contact:
+anish.shrestha --atmark-- dlsu.edu.ph
+or raise an issue at GitHub by following the GitHub link at the top of this and every other page of this document.
 
 ## Course Description
 Modern biology relies on a host of experimental techniques which shed light into a variety of phenomena that come together to constitute this amazing thing we call "life". 
@@ -35,7 +39,7 @@ At the end of the course, the student is expected to be able to do the following
 | Week | Topic                                                  |  
 | -----| ---------------------------------------------          | 
 | 1    |  Introduction                                          | 
-| 2    |  Module 1: Basics of molecular biology of the cell     | 
+| 2    |  Module 1: The Very Basics of molecular biology of the cell     | 
 | 3    |  Module 2: Exploration of our genome                   | 
 | 4    |  Module 3: Genome annotation and hidden Markov models  | 
 | 5    |  Student presentations and discussions on Module 1,2   | 
@@ -62,7 +66,7 @@ A comprehensive textbook for bioinformatics is hard to come by, since the field 
 This online ''book'' contains notes for each module. 
 It is meant to be a scaffold, providing structure to the course. 
 It is not meant to be comprehensive.
-Please read reference materials provided at the end of each module for a more detailed treatment of each topic.
+Please read reference material and link-outs provided in each module for a more detailed treatment.
 
 
 Even so, here are some good books to learn the foundational concepts in bioinformatics and biology.
