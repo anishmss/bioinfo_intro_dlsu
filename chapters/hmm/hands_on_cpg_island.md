@@ -1,4 +1,4 @@
-# Hands-on Activity: Identifying CpG islands in long stretch of DNA# Hands-on module: CpG islands 
+# Hands-on Activity: Identifying CpG islands in long stretch of DNA 
 
 And what about positional distribution -- e.g. might there be regions where you find a certain dinucleotide in higher frequency than expected?
 

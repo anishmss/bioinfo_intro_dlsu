@@ -1,9 +1,9 @@
 # A cell is an information system 
-A cell can be seen as an information system with DNA, RNA, and proteins as the key players. 
+A cell can be thought of as an information system with DNA, RNA, and proteins as the key players. 
 There are some differences in how this works in prokaryotic vs. eukaryotic cells. 
-Let's take the simpler, prokaryotic case first.
+Let's take the simpler case first.
 
-### DNA is transcribed into RNA
+## DNA is transcribed into RNA
 There are segments of DNA called **genes**, whose sequence information is used to synthesize RNA molecules. (As a side note, biology uses the word gene to mean so many different things. See {cite}`Gerstein2007-si` for the evolution of this term.)
 The biological process by which this happens is called **transcription**. 
 A key molecule in this process is **RNA polymerase**. 
@@ -28,11 +28,10 @@ name: transcription_cartoon
 Transcription zoomed in to sequence level \
 Source: https://commons.wikimedia.org/wiki/File:Transcription_label_en_%28cropped%29.jpg
 ```
-### RNA is translated to protein
+## RNA is translated to protein (or not)
 Depending on the DNA sequence transcribed, different kinds of RNAs are synthesized.
 Of these, **non-coding RNAs** go on to carry out whatever functions they have as RNAs.
-On the other hand **coding RNAs** (or **messenger RNAs** or **mRNAs**) merely hold sequence information which is used for the synthesis of proteins. 
-The biological process by which this happens is called **translation**.
+On the other hand **coding RNAs** (or **messenger RNAs** or **mRNAs**) merely hold sequence information which is used for the synthesis of proteins by a process called **translation**.
 A key player in translation is the molecule called **ribosome**.
 
 Here's a microscope image of translation in action (simultaneously with transcription). 
@@ -59,10 +58,10 @@ Translation at the sequence level
 Source: {cite} Miller, O. L., Hamkalo, B. A., & Thomas, C. A. (1970). Visualization of Bacterial Genes in Action. Science, 169(3943), 392–395. doi:10.1126/science.169.3943.392
 ```
 
-### The genetic code specifies which codon is translated to which amino acid
+## The genetic code specifies which codon is translated to which amino acid
 So then, what is the correspondence between codons and amino acids? 
 It turns out there is a deterministic rule about which codon codes for which amino acid. 
-This is called the **genetic code**, although it's more of a look-up table. 
+This is called the **genetic code**, although it's more of a look-up table than a code. 
 The figure below shows the ''standard'' genetic code. This is almost universal, but some deviations are known.
 
 
@@ -72,12 +71,12 @@ width: 600px
 name: genetic_code
 ---
 Genetic code
-Source: ??
+Source: https://en.m.wikipedia.org/wiki/File:GeneticCode21-version-2.svg
 ```
 
 ## Flow of information in a eukaryotic cell
-Although the idea remains the same for eukaryotic cells, which is to pass the information from DNA to proteins, 
-the process is a tad more complicated. 
+Although the idea of passing information from DNA to RNA to proteins remains the same for eukaryotes,
+the process is more complicated. 
 
 DNA is first transcribed into **premature RNA** or **nascent RNA** with a similar mechanism as in prokaryotes.
 There are differences, of course. The RNA polymerase is of a different kind and so are the proteins necessary for the initiating transcription.
@@ -102,8 +101,12 @@ Source: https://en.wikipedia.org/wiki/Alternative_splicing#/media/File:DNA_alter
 The mature RNA can be non-coding or coding. 
 If latter, then like in the case of  it is translated into a protein sequence based on the genetic code as in {numref}`genetic_code`. 
 
-## The Central Dogma of Molecular Biology
-This one-way flow of information from DNA to RNA to proteins is called the **central dogma of molecular biology**. Now that's one word you wouldn't expect in science, but oh well.
+## The Central Dogma of molecular biology
+This one-way transfer of sequential information from nucleic acids to proteins (but not from protein to nucleic acids or protein to protein) is called the **central dogma of molecular biology**. Dogma ?! Now that's one word you wouldn't expect in a science context, but oh well.
+
+## Further reading
+Transcription and translations are both complex processes and highly regulated by many different factors.
+See {cite}`transcription` and {cite}`translation` for a more detailed treatment of the two topics.
 
 # References
 

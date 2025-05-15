@@ -78,7 +78,7 @@ RNA is a single-stranded polymer with nucleotides as the units, similar to DNA b
 
 However, it is known that RNA likes to fold onto itself by pairing between bases, to form structures that are necessary for its function. 
 For example, {numref}`tRNA_2D_3D` right shows the structure that a transfer-RNA might take up for it to be able to carry out its function.
-The so-called **secondary structure** ({numref}`tRNA_2D_3D` left) describes bases-pair interactions, and can be represented, e.g. by a 0-1 triangular matrix. The problem of estimating a secondary structure given a RNA string is a hot research topic.
+The so-called **secondary structure** ({numref}`tRNA_2D_3D` left) describes bases-pair interactions, and can be represented, e.g. by a 0-1 triangular matrix. The problem of estimating a secondary structure given a RNA string is an active research topic.
 
 We could go even further and represent the tertiary structure describing the position of each atom in the polymer ({numref}`tRNA_2D_3D` right), but we won't venture into this aspect of structural biology in this course. 
 

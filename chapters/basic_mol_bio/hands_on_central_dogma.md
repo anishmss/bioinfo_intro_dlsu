@@ -37,6 +37,7 @@ Although maybe a bit outdated, {cite}`Dolgin2017-ua` compiled a list of the top 
 - RefSeq
 - Ensembl
 - GTEx
+- gffutils (a GFF parser)
 
 ## References
 
