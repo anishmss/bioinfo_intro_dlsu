@@ -3,6 +3,7 @@
 
 title: Bioinformatics Guide
 author: Anish M.S. Shrestha
+copyright: "This work is licensed under a Creative Commons Attribution 4.0 International License"
 logo: 'lab_logo.png'
 
 # Force re-execution of notebooks on each build.

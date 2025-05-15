@@ -51,8 +51,14 @@ Apart from the protein-coding genes, we can also see inside the blue and red box
 The green boxes contain information about regulatory elements.
 
 ### Pseudogenes
-Also in the blue and red boxes are the so called **psuedogenes**, which are defective copies of genes. See here for more details on these interesting elements. 
+Also in the blue and red boxes are the so called **psuedogenes**, which are defective copies of genes. See here for more details on these interesting elements. More here {cite}`Cheetham2020-xb`
 
 ### Transposable elements
-The pink box shows transposable elements, which are/were mobile DNA sequences capable of moving about or replicating within the human genome.
+The pink box shows transposable elements, which mobile DNA that are/were sequences capable of moving about or replicating within the human genome.
+More here {cite}`Wells2020-ky`. 
 
+## References
+
+```{bibliography} 
+:filter: docname in docnames
+```
