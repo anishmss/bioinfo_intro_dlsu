@@ -12,7 +12,7 @@ name: diversity_of_life
 Life is diverse, but there are common underlying principles.
 ```
 
-Luckily, it is not as unweildy, thanks to one necessary condition that defines living things: that they are made of cell(s). (Actually, *living* cells, which makes the definition self-referential, but let's not open that can of worms.) Modern biology thus has become mostly the study of cells: how they function, how they malfunction, what their origin story is, and so on.
+Luckily, it is not as unweildy, thanks to one defining feature of living things: that they are made of cell(s). (Actually, *living* cells, which makes the definition circular, but let's not open that can of worms.) Modern biology thus has become mostly the study of cells: how they function, how they malfunction, what their origin story is, and so on.
 
 The underlying processes that govern the functioning of all cells are largely the same. Indeed, some processes that happen inside your cells also happen in a bacterium. Of course, there are many differences among different kinds of cells, which has allowed for different flavors of biology to flourish.
 But let us first focus on the commonalities.
@@ -33,26 +33,17 @@ Composition of a typical bacterial cell. Proportions by dry mass.
 Source: https://www.nature.com/scitable/topicpage/what-is-a-cell-14023083/
 ```
 
-Of the major macromolecules, you will find **lipids**, which are biomolecules needed for forming membranes, for energy storage, and communication with other cells. 
-
-There will also be **polysaccharides** or complex carbohydrates that are fuel sources.
-
-Then there will be **DNA**, which, as you know carries hereditary information. 
-
-Further, there will be different kinds of **RNA** molecules that have regulatory functionsa or more famously are known to be carriers of information sourced in the DNA which is used for protein synthesis. 
-
-And then there will be thousands of different kinds of **proteins**, which are the workhorses of the cell.
-
-There will also be lots of other **inorganic molecules**, but let's stop here with the chemical composition of the cell before this starts to feel like a biochemistry course. 
-
-
-
-Instead let's go into a bit more detail about the three molecules that bioinformaticians love: DNA, RNA, and proteins, and see them in the light of bioinformatics.
+Of the major macromolecules, you will find **lipids**,  **polysaccharides**, **DNA**, **RNA**, and **proteins**. You will also find small organic and inorganic molecules.
+But let's not go into the biochemistry of all these molecules, and instead delve a bit more on the three molecules that bioinformaticians love: DNA, RNA, and proteins, and see them in the light of bioinformatics.
 
 ## Bioinformatic abstractions of DNA, RNA, and proteins
 
 ### DNA
-You surely already know that DNA is a double-stranded polymer in a double-helix form. A monomeric sub-unit of DNA is called a **nucleotide**, which can be one of four types depending on the nitrogen-containing **base** it carries: adenine, cytosine, guanine, thymine.
+
+**DNA**, as you surely know, as you know carries hereditary information. 
+And because it does so imperfectly (more on this when we discuss about sequence evolution), it is also a *document of evolutionary histroy*{cite}`Zuckerkandl1965-kg`. 
+
+DNA is a double-stranded polymer in a double-helix form. A monomeric sub-unit of a strand is called a **nucleotide**, which can be one of four types depending on the nitrogen-containing **base** it carries: adenine, cytosine, guanine, thymine.
 
 ```{figure} ./images/0322_DNA_Nucleotides.jpg
 --- 
@@ -63,9 +54,8 @@ Structure and structural units of DNA \
 Source: https://commons.wikimedia.org/wiki/File:0322_DNA_Nucleotides.jpg
 ```
 
-
 In bioinformatics, we just represent DNA as a string over the alphabet {a,c,g,t}.
-This considers just one of the strands, as the other can be determined easily given the complementary a-t and c-g base-pairing. So for example, the following string is a portion of human DNA somewhere 1/4th along Chromosome 3.  This is near the region that [this naughty scientist](https://www.science.org/content/article/crispr-bombshell-chinese-researcher-claims-have-created-gene-edited-twins) edited in human embryos and got into hot water for doing so.
+This considers just one of the strands, as the other can be determined easily given the complementary a-t and c-g base-pairing. So for example, the following 210 **nucleotide long** sequence (or 210 *basepairs long** if you are thinking of both strands together) is a portion of human DNA somewhere 1/4th along Chromosome 3.  This is near the region that [this naughty scientist](https://www.science.org/content/article/crispr-bombshell-chinese-researcher-claims-have-created-gene-edited-twins) edited in human embryos and got into hot water for doing so.
 
 > $ {\tt agaagagctgagacatccgttcccctacaagaaactctccccgggtggaacaagatggattatcaagtgt}$
 > $ {\tt caagtccaatctatgacatcaattattatacatcggagccctgccaaaaaatcaatgtgaagcaaatcgc}$
@@ -74,6 +64,9 @@ This considers just one of the strands, as the other can be determined easily gi
 A string representation is not the most accurate abstaction of DNA as it ignores the fact that DNA is an actual macromolecule with a 3D structure occupying 3D space. There are people who do study this structure, but much of genomics seems to be happy with the string representation, so we will just stick to it as well.
 
 ### RNA
+
+**RNA** molecules can have regulatory functions or can be carriers of information sourced in the DNA which is used for protein synthesis. 
+
 RNA is a single-stranded polymer with nucleotides as the units, similar to DNA but with the exception that instead of thymine, it has uracils. So like DNA, we could just represent RNA simply as a string over the alphabet {a, c, g, u}.  
 
 However, it is known that RNA likes to fold onto itself by pairing between bases, to form structures that are necessary for its function. 
@@ -92,6 +85,8 @@ Source: https://commons.wikimedia.org/wiki/File:OSC_Microbio_10_03_tRNA.jpg
 ```
 
 ### Proteins
+Proteins are the so-called *workhorses* of the cell, carrying out many different functions in a cell.
+
 Proteins too are polymers, with amino acids as subunits. There are 20 kinds of amino acids : alanine (A), arginine (R), asparagine (N), aspartic acid (D), cysteine (C), glutamic acid (E), glutamine (Q), glycine (G), histidine (H), isoleucine (I), leucine (L), lysine (K), methionine (M), phenylalanine (F), proline (P), serine (S), threonine (T), tryptophan (W), tyrosine (Y), and valine (V). So a protein can be represented as a string over the alphabet of amino acids. Here's a protein sequence that saved the world. It is part of the spike glyco-protein of SARS-Cov-2, on which the RNA vaccines were designed.
 
 > $ {\tt MFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHV}$
@@ -99,8 +94,9 @@ Proteins too are polymers, with amino acids as subunits. There are 20 kinds of a
 > $ {\tt LGVYYHKNNKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFKIYSKHTPI}$
 
 
-Like with RNA, the structure a protein assembles itself into is important to its ability to carry out its function. [Here](https://3d.nih.gov/entries/10379/2) for example is the structure of the human insulin monomer, the protein hormone that signals cells to increase glucose uptake. 
-Therefore, we could  also consider the structure of proteins, but for this course, we will ignore structural information, and stick to sequence analysis.
+Like RNA, a protein assembles itself into is important to its ability to carry out its function. [Here](https://3d.nih.gov/entries/10379/2) for example is the structure of the human insulin monomer, the protein hormone that signals cells to increase glucose uptake. 
+Protein structural is so important that part of the [2024 Nobel Prize in Chemistry](https://www.nobelprize.org/prizes/chemistry/2024/press-release/) was given to people working on computational prediction of protein structures.
+Therefore, we should also consider the structure of proteins, but for this course, we will ignore structural information, and stick to sequence analysis.
 
 ## Further reading
 - Cell Biology by the Numbers: What is the macromolecular composition of the cell https://book.bionumbers.org/what-is-the-macromolecular-composition-of-the-cell/

@@ -30,6 +30,7 @@ At the end of the course, the student is expected to be able to do the following
 
 - Describe basic biological processes and how these can be studied using computational tools.
 - Explore publicly available databases for genomic, transcriptomic, proteomic data.
+- Describe the core idea behind algorithms foundational bioinformatics algorithms and models.
 - Choose from the many sequence analysis algorithms and software tools and apply them to publicly available biological data to answer questions about sequence evolution.
 
 
@@ -39,7 +40,7 @@ At the end of the course, the student is expected to be able to do the following
 | Week | Topic                                                  |  
 | -----| ---------------------------------------------          | 
 | 1    |  Introduction                                          | 
-| 2    |  Module 1: The Very Basics of molecular biology of the cell     | 
+| 2    |  Module 1: The very basics of molecular biology of the cell     | 
 | 3    |  Module 2: Exploration of our genome                   | 
 | 4    |  Module 3: Genome annotation and hidden Markov models  | 
 | 5    |  Student presentations and discussions on Module 1,2   | 
@@ -61,15 +62,12 @@ Students are required to submit a report along with source code, for example in 
 
 ## Reference Material
 
-A comprehensive textbook for bioinformatics is hard to come by, since the field is moving rapidly and students have varying backgrounds.
-
 This online ''book'' contains notes for each module. 
-It is meant to be a scaffold, providing structure to the course. 
-It is not meant to be comprehensive.
+It is meant to be a scaffold, providing structure to the course, and not meant to be comprehensive.
 Please read reference material and link-outs provided in each module for a more detailed treatment.
+For scientific articles behind paywalls, you might want to search the libary of the ''emancipator and democratiser of knowledge''.
 
-
-Even so, here are some good books to learn the foundational concepts in bioinformatics and biology.
+A comprehensive textbook for bioinformatics is hard to come by, since the field is moving rapidly and students have varying backgrounds. Even so, here are some good books to learn the foundational concepts in bioinformatics and biology.
 
 ### Bioinformatics
 - R. Durbin, S. Eddy, A. Krogh, G. MitchisonB. (1998). Biological Sequence Analysis. Probabilistic models of proteins and nucleic acids. Cambridge University Press.
