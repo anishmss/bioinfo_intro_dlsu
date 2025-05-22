@@ -15,13 +15,23 @@ There are so many questions we can ask about this sequence:
 
 Some of these questions we will investigate in this module, some in later modules.
 
-## The(?) reference human genome
+## The reference human genome sequence
 There is one publicly available human genome sequence called the **GRCh38 assembly** (*assembly* because sequencing machines can only read fragments of DNA, and these fragments need to be *assembled* to reconstruct the whole genome sequence). This sequence is also called the **reference human genome sequence**, since it is widely used by researchers as a basis for comparing sequences produced by their own studies. 
 
-There is a long -- and [quite](https://www.goodreads.com/book/show/1865671.A_Life_Decoded) [dramatic](https://www.goodreads.com/book/show/1003710)) -- history to how this reference genome came about. The most notable event in this history happened in March 2000, when the then US President Bill Clinton, [announced the completion of the first draft of the human genome](https://www.youtube.com/watch?v=slRyGLmt3qc). The first draft was not really complete since there were vast gaps of underdetermined sequence, and they are being patched up to this day{cite}`Nurk2022-hi`. Nonetheless, it was an exciting start, more so because it was also announced that the raw sequences would be released to the public domain (although one of the accompanying papers in *Science* remains behind a paywall (boo!)). 
+There is a long -- [and](https://www.nature.com/articles/d41586-020-01849-w) [quite](https://www.goodreads.com/book/show/1865671.A_Life_Decoded) [dramatic](https://www.goodreads.com/book/show/1003710) -- history to how this reference genome came about. The most notable event in this history happened in March 2000, when the then US President Bill Clinton, [announced the completion of the first draft of the human genome](https://www.youtube.com/watch?v=slRyGLmt3qc). 
 
-However, many are complanining about the lack of "reference-y-ness" of that sequence since it was obtained from the genomes of multiple individuals, mostly from North America, which is not really representative of the global human population. These complaints are not unwarranted; but for this course though, it will serve as a wonderful dataset to explore. If you are a normal human being, your genome sequence is going to be very, very, very close to this sequence anyway.
+The first draft was not really complete since there were vast gaps of underdetermined sequence, and they are being patched up to this day ({cite}`Nurk2022-hi`). Nonetheless, it was an exciting start, more so because it was also announced that the raw sequences would be released to the public domain (although one of the accompanying papers in *Science* remains behind a paywall (boo!)). 
 
+Many are now complanining about the lack of "reference-y-ness" of that sequence since it was obtained from the genomes of multiple individuals, mostly from North America and with European ancestry.  It is not really representative of the global human population. These complaints are not unwarranted; but for this course though, it will serve as a wonderful dataset to explore. If you are a normal human being, your genome sequence is going to be very, very, very close to this sequence anyway.
+```{figure} ./images/whose_genome_was_sequenced.jpg
+---
+width: 600px
+name: whose_genome_was_sequenced
+---
+Whose genome was sequenced?\
+Courtesy: National Human Genome Research Institute. \
+Source: https://www.genome.gov/about-genomics/educational-resources/fact-sheets/human-genome-project
+```
 ## Zooming in
 The GRCh38 assembly contains sequence from all chromosomes, which if you concatenate would result in a string ~3 Gigabases long. That's a loooong sequence of just a,c,g,ts, and nothing will come out of by just eyeballing it.
 
@@ -90,13 +100,22 @@ Original title: "The seminal discovery of microRNAs was unexpected and revealed 
 
 
 ### Regulatory elements
-The green boxes contain information about regulatory elements, which play a role in the initiation or efficiency of transcription or translation. 
+The green boxes contain information about regulatory elements, which play a role in the initiation or efficiency of transcription or translation. {numref}`transcription_regulation` shows our current understanding of transcription is regulated in mammals.
 
-A **promoter** is defined loosely as a sequence upstream of the transcription start site which is important in transcription initiation. This site is where DNA-binding proteins (aka transcription factors) and RNA polymerase assemble before the actual transcription begins. In the case of human protein-coding genes, which are transcribed by RNA polymerase II, the promoter sequence is typically upstream of the transcription start site and have some sequence signatures. One element of the promoter is a TATA box, so called because its sequence signature in regex looks something like ${\tt TATA[AT]AA[AG]}$. 
+```{figure} ./images/transcription_regulation.jpg
+---
+width: 600px
+name: transcription_regulation
+---
+Mammalian transcription regulation.
+Source: https://en.wikipedia.org/wiki/File:Regulation_of_transcription_in_mammals.jpg
+```
 
-An **enchacer** is like a promoter in that transcription factors bind to this region and influence transcription of one or more genes. It can distant from the gene whose expression it is controlling. 
+A **promoter** is defined loosely as a sequence upstream of the transcription start site which is important in transcription initiation. This site is where DNA-binding proteins (a.k.a. general transcription factors) and RNA polymerase assemble before the actual transcription begins. In the case of human protein-coding genes, which are transcribed by RNA polymerase II, the promoter sequence is typically upstream of the transcription start site and have some sequence signatures. One element of the promoter is a TATA box, so called because its sequence signature in regex looks something like ${\tt TATA[AT]AA[AG]}$. 
 
-The image also shows putative binding sites for **CTCF** which is a kind of transcription factor.
+An **enchacer** is like a promoter in that other transcription factors bind to this region and influence transcription of one or more genes. It can be distant from the gene whose expression it is controlling, and one enhancer can regulate multiple genes.
+
+The genome browser snapshot also shows putative binding sites for **CTCF** which is a kind of transcription factor.
 
 
 
@@ -111,12 +130,13 @@ The pink box shows **transposable elements** or **transposons**, which are mobil
 
 Transposons are classified as Type/Class I (or a better name is **retrotransposons**) or Type/Class II (**DNA transposons**). A retrotransposon requires an RNA intermediate which is reverse-transcribed and integrated into the genome. This is a copy-and-paste mechanism. A transposon, on the other hand, is cut-and-pasted into a different location in the genome. Within these two classes too, there are subclasses and so on, and there are [efforts to catalog](https://www.dfam.org/home) these elements.
 
-Mobile genetic elements are present in virtually all eukaryotes. 
+Mobile genetic elements are present in virtually all eukaryotes. More here {cite}`Wells2020-ky`. 
 
-They are also found in prokaryotes. In the case of bacteria, where it is easier to transfer DNA horizontally between two living bacterial cells (as opposed to vertically between parent and offspring), mobile genetic elements are blamed for carrying around anti-biotic resistance gene as their cargo, making the crisis of antibiotic resistance worse.
-
-More here {cite}`Wells2020-ky` and here {cite}`Partridge2018-iq`
-
+They are also found in prokaryotes. In the case of bacteria, where it is easier to transfer DNA horizontally between two living bacterial cells (as opposed to vertically between parent and offspring), mobile genetic elements are blamed for carrying around anti-biotic resistance gene as their cargo, making the crisis of antibiotic resistance worse. More here {cite}`Partridge2018-iq`.
+ 
+### What else is in there?
+If you look at the genome browser snapshot closely, towards the bottom it says that there are 655 tracks turned off. 
+Why don't you go explore?
 
 ## References
 

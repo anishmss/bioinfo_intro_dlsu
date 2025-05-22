@@ -108,13 +108,14 @@ Genetic code
 Source: https://en.m.wikipedia.org/wiki/File:GeneticCode21-version-2.svg
 ```
 
-## RNA →  DNA
-Since RNA and DNA speak essentially the same language, it is perhaps not surprising that RNA can be 
-**reverse transcribed** to create a **complementary DNA** or **cDNA**. This happens, for example, when HIV-1 virus, which has RNA as its genetic material reverse transcribes it into DNA which then is integrated into the host genome. Another example is that of human telomere extension by an enzyme called telomerase reverse transcriptase. Experimental techniques for measuring RNA abundance or sequencing RNA also artifically carry out reverse transcription. Remember all the RT-PCR tests for SARS-Cov-2 you were forced to take during the pandemic?
 
-## The Central Dogma of molecular biology
-We have seen the various modes of transfer of sequential information between molecules. 
-It turns out the transfer of information from nucleic acids to proteins (but not from protein to nucleic acids or protein to protein) is called the **central dogma of molecular biology**. Dogma ?! Now that's one word you wouldn't expect in a science context, but oh well. 
+
+## RNA →  DNA? RNA →  RNA? Protein → RNA? Protein → DNA? 
+Back in 1950s when people were still trying to figure out how a cell works as an information system and the kinds of roles the various biomolecules play in it, the consensus view was that information is transferred from nucleic acids to proteins, but not from protein to nucleic acid or protein to protein. This concept was coined **the central dogma of molecular biology**. 
+
+The dogma was not too dogmatic as it was updated to allow for RNA → DNA transfers, which was previously not known to happen. This does happen a lot however, for example, when HIV-1 virus, which has RNA as its genetic material **reverse transcribes** it into DNA which then is integrated into the host genome. Another example is that of human telomere extension by an enzyme called telomerase reverse transcriptase. Experimental techniques for measuring RNA abundance or sequencing RNA also artifically carry out reverse transcription. Remember all the RT-PCR tests for SARS-Cov-2 you were forced to take during the pandemic? Anyway, the updated version of the still postulated that Protein → RNA, Protein → DNA, Protein → Protein transfer never occur.
+
+Today we know a lot more about molecular genetics, and that RNA, DNA, proteins interact in many ways influencing the way in which their sequences are determined. So there is a need to revisit the central dogma ({cite}`Shapiro2009-qe`), and while we are at it, perhaps give it a better name.
 
 ## Further reading
 Replication, transcription, translations are all complex processes and highly regulated by many different factors.
