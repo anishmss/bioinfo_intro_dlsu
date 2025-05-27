@@ -22,6 +22,7 @@ bibtex_bibfiles:
   - references/ref_intro.bib
   - references/ref_basic_mol_bio.bib
   - references/ref_genomes.bib
+  - references/ref_genome_annotation_hmm.bib
 # Information about where the book exists on the web
 repository:
   url: https://github.com/anishmss/bioinfo_intro_dlsu  # Online location of your book

@@ -1,10 +1,27 @@
 # Genome annotation
 
 ## A vast sea of a,c,g,ts
-Say you sequenced and assembled the genome of your favorite organism.
-At this point, the sequence is just a vast sea of a,c,g, and ts.
-To make any sense of it, you need to locate the genes and other elements in the genome sequence, a process called **genome annotation**. In the previous module, we viewed some of the annotations of the human genome on a genome browser. How are they obtained? Surely nothing come out of just visual inspection of sequences. 
-This is a task for computers. 
+
+By early 2000s, the first draft of the human genome sequence was publicly available. 
+We had a *blueprint*, but it seemed like a vast sea of a,c,g,t mumbo jumbo.
+To *decode* the blueprint, genes and other functional elements had to be located in the sequence. We call this process **genome annotation**. Annotating the human genome would be a tall task; and this made many biologists and bioinformaticians alike very happy as it meant they had a job for the rest of their lives.
+
+A large science consortium named ENCODE was organized in 2003 with the objective to annotate the human genome. 
+Relying mainly on experimental techniques but also on computer algorithms, the first phase (2003-2007) of the project was able to annotate the protein-coding regions. Here's the front cover of the Nature issue reporting this work.
+```{figure} ./images/nature_7146.png
+---
+width: 400px
+name: nature_7146
+---
+Front cover of Nature Vol 447 Issue 7146, 14 June 2007.\
+Source: https://www.nature.com/nature/volumes/447/issues/7146
+```
+However, this annotation accounted for only ~1% of the genome. The project was expanded to cover the whole genome; and in 2011-2012, it was reported that ~80% of the genome was now annotated ({cite}`ENCODE-Project-Consortium2011-ql`,{cite}`ENCODE-Project-Consortium2012-ce`). There were further expansions to the ENCODE project, and the task of genome annotation continues to this day. 
+
+Now say you have your own favorite organism, and you sequenced and assembled its genome.
+These days, even labs with moderate resources are able to afford sequencing.
+But what if you don't have the resources like that of the ENCODE project to run a variety of assays to annotate the genome?
+Can we annotate a genome using computer algorithms? With good quality reference databases,  yes, we can; and that is what we will begin looking at in this module.
 
 ## The annotation problem
 Before looking at algorithms for annotation, let's discuss the problem a bit. 
@@ -13,6 +30,13 @@ The annotation problem takes a DNA sequence as input and applies labels to each 
 
 Take for example the problem of **gene finding**.
 Recall the structure of a typical eukaryotic gene.
+```{figure} ./images/Gene_structure_eukaryote_2_annotated.svg.png
+---
+width: 400px
+name: eukaryotic_gene_structure
+---
+Source: Image cropped from https://en.m.wikipedia.org/wiki/File:Gene_structure_eukaryote_2_annotated.svg
+```
 
 So given a sequence like so:
 
@@ -35,3 +59,9 @@ One approach is to take reference sequence(s) that are already well annotated, a
 Another method is to build a probabilistic model that incorporates the differences in statistical features of the labels. For example, the distribution of abundances of 3-tuples (aka 3-mers) inside exons vs. introns are quite different. The model can be trained on well-annotated reference sequences. We then run the input sequence through the model to compute a most likely annotation. 
 
 A hidden Markov model provides an excellent framework for doing all of this. It is widely used in many bioinformatics tools, so let's spend some time on it. 
+
+## References
+
+```{bibliography} 
+:filter: docname in docnames
+```

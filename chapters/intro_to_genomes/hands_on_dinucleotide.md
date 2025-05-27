@@ -27,7 +27,7 @@ where $f_{xy}$ is the observed frequency of $xy$ in $S$ and $f_x$ is the freque
 
 
 However, since $S$ is double stranded, we need to consider its reverse complementary sequence $S_{RC}$. 
-Let $S'$ be the sequence obtained by concatenating $S$ and $S_{RC}$. The presence of say a $\tt{ cc}$ in $S$ means there is a $\tt{ gg}$ in $S_{RC}$, and the frequency of $\tt{ cc}$ and $\tt{ cc}$ in $S'$ would be the same. So we could club together  $\tt{ cc}$ and $\tt{ cc}$ into one group. Overall there will be ten groups from the 16 possible dinulceotides.
+Let $S'$ be the sequence obtained by concatenating $S$ and $S_{RC}$. The presence of say a $\tt{ cc}$ in $S$ means there is a $\tt{ gg}$ in $S_{RC}$, and the frequency of $\tt{ cc}$ and $\tt{ gg}$ in $S'$ would be the same. So we could club together  $\tt{ cc}$ and $\tt{ cc}$ into one group. Overall there will be ten groups from the 16 possible dinulceotides.
 
 
 For a nucleotide $x$, its frequency $f'_{x}$ in  $S'$ is:
