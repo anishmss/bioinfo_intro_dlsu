@@ -47,7 +47,7 @@ name: genome_annotation
 
 This kind of labeling problem is not new, similar versions of it have arisen in other domains.
 In audio signal processing, the task of speech recognition is to label intervals of raw audio signals by words.
-```{figure} ./images/chicken_banana.png
+```{figure} ./images/Chicken_banana.png
 ---
 width: 400px
 name: chicken_banana
