@@ -18,7 +18,7 @@ name: cpg_island
 CpG island\
 Source: https://en.wikipedia.org/wiki/CpG_site
 ```
-For more on CpG islands, 
+For more on CpG islands: https://doi.org/10.1016/j.febslet.2009.04.012 .
 
 Let's use an HMM to annotate a given DNA string with CpG islands and check if gene promoter regions are enriched in CpG islands.
 
@@ -26,10 +26,10 @@ Let's use an HMM to annotate a given DNA string with CpG islands and check if ge
 - Specify the states of the HMM model. Use the one in Fig 3.3 of Biological Sequence Analysis by Durbin et al. 
 - Download training data from https://genome.ucsc.edu/cgi-bin/hgIntegrator. Choose stretches of Chr18 avoiding telomeric and centromeric regions. Choose Regulation track group and CpG Islands track to get CpG island annotation. 
 - Esimate the state transition probabilies of the model based on training data. Emission probabilities are all trivially set.
-- As test data, download stretches of Chr19 and the corresponding CpG island annotatoin and gene annotation.  
+- As test data, download stretches of Chr19 and the corresponding CpG island annotation and gene annotation.  
 - Run your HMM against the test sequences. Compute Viterbi decoding and posterior decoding. 
 - Compare your decoding to the CpG island annotation of the test data. As performance metric, you can compute a confusion matrix at per-nucletotide level. You can also check for differences in distribution of the length of the predicted and annotated islands.
-- Next, check if regions ~500bp upstream of genes are enriched in CpG islands. See note below for  computing statistical significance of overlap of genome annotations.      
+- Next, check if regions ~1000bp upstream of genes are enriched in CpG islands. See note below for  computing statistical significance of overlap of genome annotations.      
 
 ## Note on computing evaluating overlap between genome annotation.
 There are several tools for computing if the overlap between two sets of annotations are statisically significant (under some random null model). Following are some options. Some tools might not be maintained, so use whatever runs. 
