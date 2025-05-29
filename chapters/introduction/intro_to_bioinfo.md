@@ -1,8 +1,8 @@
 # What is bioinformatics, and why is it important?
 
 ## What's in a name? 
-There are differing opinions on what makes up the field of bioinformatics, what with similarly named overlapping fields like computational biology, mathematical biology, systems biology etc.
-In an all encompassing, broad sweep, we can think of bioinformatics is the application of computational sciences (computer science, statistics, machine learning, mathematics, etc.) to problems in biology. Both these areas are evolving so fast, it's futile to fixate on the exact defintion of bioinformatics.
+There are differing opinions on what makes up the field of bioinformatics, what with similarly named overlapping fields like computational biology, mathematical biology, systems biology, population genetics, molecular evolution, etc.
+In an all encompassing, broad sweep, we can think of bioinformatics as the application of computational sciences (computer science, statistics, machine learning, mathematics, etc.) to problems in biology. Both these areas are evolving so fast, it's futile to fixate on the exact defintion of bioinformatics.
 
 Let's instead look at how we have arrived at this point in time where modern biology and computational sciences go hand in hand.
 

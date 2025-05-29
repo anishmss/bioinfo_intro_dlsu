@@ -39,13 +39,13 @@ where $f_x$ and $f_{\bar{x}}$ are the frequencies $x$ and its reverse complement
 
 Similarly, the frequency of a di-nucleotide $xy$ in $S'$ is:
 
-$f'_{xy} =(1/2) \times (f_{xy} + f_{\bar{xy}})$, 
+$f'_{xy} =(1/2) \times (f_{xy} + f_{\bar{y}\bar{x}})$, 
 
-where $f_{xy}$ and $f_{\bar{xy}}$ are the frequencies of $xy$ and its reverse complement dinucleotide $\bar{y}\bar{x}$ in $S$.
+where $f_{xy}$ and $f_{\bar{y}\bar{x}}$ are the frequencies of $xy$ and its reverse complement dinucleotide $\bar{y}\bar{x}$ in $S$.
 
 Therefore the odds ratio that considers both strands is:
 
-$R'_{xy} = \frac{f'_{xy}}{f'_{x}f'_{y}} = 2\times\frac{f_{xy} + f_{\bar{xy}}}  {(f_{x} + f_{\bar{x}}) \times (f_{y} + f_{\bar{y}})}.$
+$R'_{xy} = \frac{f'_{xy}}{f'_{x}f'_{y}}.$
 
 
 ## References
