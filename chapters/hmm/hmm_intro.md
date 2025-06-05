@@ -84,7 +84,7 @@ p(O,Q) = \pi_{q_1} p(o_1|q_1) p(q_{2}|q_{1}) \cdots p(q_{T-1}|q_{T}) p(o_T|q_T)
 There are three fundamental problems to solved with an HMM.
 
 :::{dropdown} Evaluation
-- Given an HMM model, and an observation sequence $O$, the evaluation problem is to compute the probability $p(O)$, marginalizing out the state sequence, i.e.:
+- Given an HMM model, and an observation sequence $O$, the evaluation problem is to compute the probability $p(O)$, marginalizing out the state sequences, i.e.:
 ```{math}    
 p(O) = \sum\limits_{\mathrm{all} Q} p(O,Q).
 ```
@@ -116,7 +116,7 @@ Q^* = \underset{Q}{\mathrm{argmax}}\ p(O,Q)
 - Another way to define decoding is to find a path $\hat{Q} = \hat{q_1}, \hat{q_2}, \ldots \hat{q_T}$ such that 
   $\hat{q}_t$ is the state with the highest posterior probability at time $t$, i.e.:
 ```{math}
-    q^*_t = \underset{i}{\mathrm{argmax}}\ (\gamma_t(i))
+    \hat{q}_t = \underset{i}{\mathrm{argmax}}\ (\gamma_t(i))
 ```
 
 - A problem with this decoding is that $Q*$ might not be a valid state sequence if there are transitions that have zero probability.

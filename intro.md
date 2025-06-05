@@ -37,22 +37,22 @@ At the end of the course, the student is expected to be able to do the following
 
 ## Learning Plan
 
-| Week | Topic                                                  |  
-| -----| ---------------------------------------------          | 
-| 1    |  Introduction                                          | 
+| Week | Topic                                                     |  
+| -----| -------------------------------------------------         | 
+| 1    |  Introduction                                             | 
 | 2    |  Module 1: The very basics of molecular biology of the cell     | 
-| 3    |  Module 2: Exploration of our genome                   | 
-| 4    |  Module 3: Genome annotation and hidden Markov models  | 
-| 5    |  Student presentations and discussions on Module 1,2   | 
-| 5    |  Module 4: Sequence evolution and sequence alignment   |
-| 6    |  Module 5: Faster and more refined sequence alignment        |
-| 7    |  Student presentations and dicussions on Module 3,4    |
-| 8    |  Module 6: Measuring and comparing gene expression     |
-| 9    |  Module 7: Phylogenetic tree estimation                |
-| 10   |  Student presentations and discussion on Module 5,6    |
-| 11   |  Module 8:  Genome-wide association studies            |
-| 12   |  Spare week                                            |
-| 13   |  Student presentations and discussions on Module 7,8   |                                        |
+| 3    |  Module 2: Exploration of our genome                      | 
+| 4    |  Module 3: Genome annotation and hidden Markov models     | 
+| 5    |  Student presentations and discussions on Module 1,2      | 
+| 5    |  Module 4: Sequence evolution and sequence alignment      |
+| 6    |  Module 5: Faster and more refined sequence alignment     |
+| 7    |  Student presentations and dicussions on Module 3,4       |
+| 8    |  Module 6: Multiple sequence alignment and profile HMMs   |
+| 9    |  Module 7: Phylogenetic tree estimation                   |
+| 10   |  Student presentations and discussion on Module 5,6       |
+| 11   |  Module 8:  Genome-wide association studies               |
+| 12   |  Module 9: Measuring and comparing gene expression        |
+| 13   |  Student presentations and discussions on Module 7,8      |
 
 ## Major course output
 

@@ -24,6 +24,10 @@ parts:
   - caption: Sequence alignment
     chapters:
     - file: chapters/sequence_alignment/sequence_alignment_what_and_why
+    - file: chapters/sequence_alignment/sequence_alignment_methods
+    - file: chapters/sequence_alignment/hands_on_ACE2.md
+    - file: chapters/sequence_alignment/faster_local_alignments.md
+    - file: chapters/sequence_alignment/alignment_advanced_topics.md
   - caption: Measuring and comparing gene expression 
     chapters:
     - file: chapters/rna_seq/rna_seq_intro.md
