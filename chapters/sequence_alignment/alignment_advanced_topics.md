@@ -2,7 +2,6 @@
 
 ## Devising a good scoring scheme
 
-## Probabilistic model of sequence alignment
+## A probabilistic model of sequence alignment
 
 
-##
