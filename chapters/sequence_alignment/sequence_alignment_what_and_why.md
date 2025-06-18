@@ -69,8 +69,8 @@ Some mechanisms :
 - Viral genome insertions, etc.
 
 
-## Sequence alignment is a hypothesis about how the sequence pair might have evolved
-Given two sequences, a **sequence alignment** is a one-to-one correspondence between the residues of common ancestry (aka **homologous** residues). An alignment can be visualized by placing one sequence on top of another such that homologous residues are in the same **column**. A deletion or insertion is mapped to a **gap** character "-". For the example in {numref}`sequence_evolution`, a correct alignment between the pairs can be visualized as shown below.
+## Sequence alignment 
+Given two sequences, a **sequence alignment** is a one-to-one correspondence between the residues of common ancestry (aka **homologous** residues). An alignment can be visualized by placing one sequence on top of another such that homologous residues are in the same **column**. A deletion or insertion is mapped to a **gap** character "-". For the example in {numref}`sequence_evolution`, a correct alignment between the pairs is as shown below.
 
 ```{figure} ./images/human-mouse-seq-alignment.svg
 ---
@@ -80,10 +80,16 @@ name: sequence_evolution_alignment
 A sequence alignment (right) describing the evolution of sequence pair (left).
 ```
 
-Given two sequences, an alignment between them is a hypothesis about how the sequences have evolved from a common ancestry, or if they have a common ancestry at all. 
-
 Because we don't have the ancestral or the intermediate sequences, 
-a sequence alignment cannot fully explain how the sequence pair has evolved.
+a sequence alignment, even a correct one, cannot fully explain how the sequence pair has evolved.
 It is going to miss important details: back substitutions, parallel substitions, coincidental substitutions, etc. These are important especially if we wish to count the actual number of substitutions. This is needed for example to compute evolutionary distance between sequences. There are ways to correct for some of these.
 
-We will next look at how to compute alignments given two sequences. 
+## Sequence alignment is a hypothesis about sequence evolution
+Given two homologous sequences, an alignment between them provides a hypothesis about **how** the sequences have evolved from a common ancestry.
+
+Given two sequences, a sequence alignment can also be used to test the hypothesis  **whether** they are homologous or not, in the first place.
+
+Finally, given two sequences, we might be interested in identifying homology that exists only between parts of the sequences and not across the entire sequences, i.e. we are interested only in aligning substrings of the given sequences. 
+This is called **local alignment** as opposed to **global alignment**  in which every residue in the sequences is accounted for in the alignment.
+
+In the following, we will treat global and local alignments separately, and look at how to compute them and the algorithmic and statistical aspects of sequence alignment.
