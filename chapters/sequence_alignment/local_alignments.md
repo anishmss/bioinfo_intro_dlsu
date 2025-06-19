@@ -1,4 +1,8 @@
-# Computing a local alignment
+# Local alignment
+
+## Use cases:
+ - Searching a protein database with a query sequence
+ - Comparing human and mouse genomes to find regions of local similarity, etc.
 
 ## Scoring a local alignment
 We will use the same scoring scheme as we did with global alignemnt, except that we would want only parts of the sequences that are homologous to contribute to the score (e.g. the green segments below). 
@@ -11,7 +15,7 @@ Local alignment scoring
 ```
 
 ## Smith-Waterman algorithm for local alignment
-The problem of finding a highest-scoring local alignment can also be solved by dynamic programming.
+Like the global alignment problem, the problem of finding a highest-scoring local alignment can also be solved by dynamic programming.
 
 ### Optimal substructure property
 Again, let $A$ and $B$ be the two input sequences; let $A[i]$ be the $i$-th residue of sequence $A$ and $A[i:j]$ be the substring $A[i], A[i+1],\ldots, A[j]$. Again, for simplicity, let's assume linear gap penalty for now.
