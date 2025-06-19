@@ -56,13 +56,13 @@ Toy example of evolution of a DNA segment of human and mouse since their diverge
 
 ## Mechanisms by which mutations arise
 Some mechanisms :
-- DNA replication error
+- [DNA replication error](https://www.youtube.com/watch?v=3Izi_7ewKOo)
 - Replication slippage
-- Homologous recombination
+- [Homologous recombination](https://www.youtube.com/watch?v=Xe-83tBcxhs)
 - Chromosomal breakage and joining
 - Improper repair of DNA double-stranded breaks 
-- DNA transposition
-- Viral genome insertions, etc.
+- [DNA transposition](https://www.youtube.com/watch?v=XYZHMGUGq6o)
+- [Viral genome insertions](https://www.youtube.com/watch?v=pF3L4hISZnw), etc.
 
 
 ## Sequence alignment 

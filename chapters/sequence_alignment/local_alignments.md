@@ -8,7 +8,7 @@
 We will use the same scoring scheme as we did with global alignemnt, except that we would want only parts of the sequences that are homologous to contribute to the score (e.g. the green segments below). 
 ```{figure} ./images/local_alignment.svg
 ---
-width: 600px
+width: 400px
 name: local_alignment
 ---
 Local alignment scoring
@@ -52,14 +52,24 @@ The optimal local alignment score is then the maximum of $S_{ij}$ over all possi
 
 ### Backtracking
 
+### Demo
+
+[Here](https://rna.informatik.uni-freiburg.de/Teaching/index.jsp?toolName=Smith-Waterman) is an online demonstration.
+
 ### Time complexity
+Let $m,n$ be the lengths of sequences $A,B$, respectively.
+There are $\Theta(mn)$ cells to compute and each cell takes $\Theta(1)$ time to compute. 
+So the running time is $\Theta(mn)$
+Even though the search space is much larger than global alignment, interestingly the running time is the same.
 
 ### Affine gap penalty
+
+
 
 ## Heuristics for faster local alignments
 
 ### Seed and extend
-
+ 
 
 ### How to find seeds quickly?
 
