@@ -113,7 +113,7 @@ That is, we wish to compute the probability that two *unrelated* sequences of th
 
 First off, how do we define *unrelated*-ness? A mathematically convenient way is to think of two random sequences, each generated from a given background frequency of nucleotides (or amino acids for protein sequences). Let $S$ be a random variable representing the optimal local alignment score of two random sequences of lengths $m$ and $n$.
 
-What is the probability distribution of $S$? Could we approximate it with a normal distribution so that we can easily compute $p(S > s)$ through e.g. z-scores? It turns out not. For the case of **ungapped local alignments**, it can be shown analytically that $S$ follows a so-called extreme value distribution (a.k.a Gumbel distribution). The derivation is quite complicated, but the idea is as follows. First,  under assumptions that $m$ and $n$ are sufficiently large, the *number* of distinct local alignments with scores at least $s$ can approximated by a Poisson distribution with expectation:
+What is the probability distribution of $S$? Could we approximate it with a normal distribution so that we can easily compute $p(S \geq s)$ through e.g. z-scores? It turns out not. For the case of **ungapped local alignments**, it can be shown analytically that $S$ follows a so-called extreme value distribution (aka Gumbel distribution). The derivation is quite complicated, but the idea is as follows. First,  under assumptions that $m$ and $n$ are sufficiently large, the *number* of distinct local alignments with scores at least $s$ can approximated by a Poisson distribution with expectation:
 ```{math}
 E[\text{no. of alignments with score } S \geq s] = kmne^{-\lambda s},
 ```
@@ -122,7 +122,7 @@ Then it follows that $p(S \geq s)$ which is the probability that there is at lea
 ```{math}
 p(S \geq s) = 1 - e^{-kmne^{-\lambda s}}.
 ```
-Usually, the E-value shown above is reported rather than the probability, since it's easier to interpret.
+The E-value shown above is used rather than the probability, since it's easier to interpret.
 And anyway, for small values, E-value is very close to p-value, since for a real number $x$, $e^x \approx 1 + x$ when $|x|$ is small.
 
 In the case of database search, a query sequence of length $m$ is compared to many sequences of varying lengths. One easy workaround is to think of the entire database as one long sequence of length $n$. The screenshot below shows a BLAST database search result sorted by E-value. 
@@ -135,8 +135,9 @@ name: blast_evalue
 Screenshot of BLAST report. 
 ```
 
-
 Unfortunately, there is no theory for the case of gapped alignment scores. Luckily,  empirical evidence suggest that it is ok to assume extreme value distribution for gapped cases. However, the parameters $k$ and $\lambda$ have to be obtained through simulations.
+
+TODO: Edge correction
 
 ## References
 

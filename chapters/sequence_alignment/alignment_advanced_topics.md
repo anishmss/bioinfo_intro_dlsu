@@ -33,7 +33,7 @@ LR(x) = \frac{p(x|H_1)}{p(x|H_0)}.
 For $n=8$, here are its values:
 | $x$   | $0$   |$1$    |$2$   |$3$   |$4$   |$5$   |$6$   |$7$   |$8$  |
 |-------|-------|-------|------|------|------|-------|------|------|-------|
-|$LR(x)$| 0.017 |0.039  |0.091 |0.213 |0.498 |1.162  |2.711 |6.325 |0.0678 |
+|$LR(x)$| 0.017 |0.039  |0.091 |0.213 |0.498 |1.162  |2.711 |6.325 |14.749 |
 
 We reject $H_0$ in favor of $H_1$ if $LR(x)$ is greater than some threshold, say 1.
 The threshold is arbitrary, but controls the rate of making a false positive and false negative errors.
@@ -53,7 +53,7 @@ Let's make this more concrete. To make life easy, we will consider a gapless glo
 
 The null hypothesis $H_0$ is that the two sequences are random. By random, we mean that each position of $A$ and $B$ is indepedent, and at each position we observe character $x$ with probability $f_A(x)$ and $f_B(x)$, respectively. Thus the likelihood of alignment under $H_0$ is:
 ```{math}
-p(\text{alignment} \mid H_0) = \prod_{\text{all columns}} f_A(x)f_B(x).
+p(\text{alignment} \mid H_0) = \prod_{\text{all columns}} f_A(x)f_B(y).
 ```
 
 The alternative hypothesis $H_1$ is that the two sequences are homologous. 
@@ -65,11 +65,11 @@ This can either be computed using models of DNA or amino-acid evolution, or can 
 
 The likelihood ratio is :
 ```{math}
-LR(\text{alignment}) = \prod_{\text{all columns}}\frac{p(x,y)}{f_A(x)f_B(x)},
+LR(\text{alignment}) = \prod_{\text{all columns}}\frac{p(x,y)}{f_A(x)f_B(y)},
 ```
 It's computationally more convenient to use the **log of the likelihood ratio** instead:
 ```{math}
-LLR(\text{alignment}) = \sum_{\text{all columns}}\log \frac{p(x,y)}{f_A(x)f_B(x)},
+LLR(\text{alignment}) = \sum_{\text{all columns}}\log \frac{p(x,y)}{f_A(x)f_B(y)},
 ```
 
 Recall that the score $S$ of a gapless alignment is obtained by adding the score of each column, i.e. :
@@ -82,11 +82,12 @@ Since statistical theory suggests using likelihood ratio (or its log) as a test 
 ```{math}
 s(x,y) = \log \frac{p(x,y)}{f_A(x)f_B(x)}.
 ```
+So this suggests that the substitution scores between $x$ and $y$ shouldn't be arbitrary, but  should depend on the background probabilities of $x$ and $y$ and on the probability that $x$ and $y$ are found aligned in alignment of homologous sequences.
 
 Follow-up questions (with brief answers):
 - Can this be extend this to compute gap penalty? (Yes)
 - Can the score set this way used for local alignments? (No, it's not most powerful, but in practice we just use it.)
-- Do we have a set of confident alignments for every scenario? (No, but we have a  method to fit the scoring scheme to data at hand.)
+- Do we have a set of confident alignments for every scenario? (No, but there are [methods](https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btw742) to customize the scoring scheme to any scenario. More on this when we discuss probabilistic model of sequence alignment)
 
 
 ## A probabilistic model of sequence alignment
