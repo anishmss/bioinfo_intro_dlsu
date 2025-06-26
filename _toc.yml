@@ -27,6 +27,7 @@ parts:
     - file: chapters/sequence_alignment/global_alignment
     - file: chapters/sequence_alignment/hands_on_ACE2
     - file: chapters/sequence_alignment/local_alignments
+    - file: chapters/sequence_alignment/hands_on_HIV
     - file: chapters/sequence_alignment/alignment_advanced_topics
   - caption: "Multiple sequence alignment and profile HMM"
     chapters:

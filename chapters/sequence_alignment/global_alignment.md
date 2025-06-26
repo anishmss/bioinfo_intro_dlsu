@@ -2,7 +2,7 @@
 
 ## Use cases
 
-- Aligning two homologous genes to identify differences. 
+- Aligning two homologous genes to identify evolutionary events. 
 - Computing evolutionary distance between two homologous genes, which can be used for multiple sequence alignment and phylogenetic tree construction (more on this in later sections).
 
 ## Computational problem formulation
@@ -21,9 +21,9 @@ name: two_alignments
 Two alignments of the same sequence pair. Which one should score higher?
 ```
 
-The commonly used scoring scheme has two components:  (1) a **substiution matrix** $M = [m_{xy}]$, where $m_{xy}$ is the score for an alignment column containing residues $x$ and $y$ in the first and second sequence, respectively, and (2) a **gap penalty** to score the insertions and deletions (also called **indels**). 
+The commonly used scoring scheme has two components:  (1) a **substitution matrix** $M = [m_{xy}]$, where $m_{xy}$ is the score for an alignment column containing residues $x$ and $y$ in the first and second sequence, respectively, and (2) a **gap penalty** to score the insertions and deletions (also called **indels**). 
 
-Shown below is a substitution matrix called BLOSUM-62 ofteb used for protein sequence alignment. 
+Shown below is a substitution matrix called BLOSUM-62 often used for protein sequence alignment. 
 More later on where these come from.
 ```{figure} ./images/960px-Blosum62-dayhoff-ordering.svg.png
 ---
@@ -85,11 +85,11 @@ The base cases are:
 ````
 
 ### Bottom-up computation
-The computation of $S_{ij}$ can be visualized as a matrix with each cell corresponding to $S_{ij}$. Computing a cell depends only on 3 other cells: one immediately above, one to the left, and one diagonally to the left, this matrix can be computed rowwise left to right (or columnwise top to bottom or diagonal top-left to right-bottom).
+The computation of $S_{ij}$ can be visualized as a matrix with each cell corresponding to $S_{ij}$. Computing a cell depends only on 3 other cells: one immediately above, one to the left, and one diagonally to the left. There this matrix can be computed by filling in the rows from top to bottom and each row filling in the cells from left to right. Are there other orders in which to compute the cells?
 
 
 ### Obtaining an optimal alignment
-The computation of $S_{ij}$ just gives the optimal global alignment score. To obtain the actual optimal alignment, we need remember which of the 3 cases gives the maximum, and use that information to perform  **backtracking**.
+The computation of $S_{ij}$ just gives the optimal global alignment score. To obtain the actual optimal alignment, we need remember which of the 3 cases gives the maximum, and use that information to perform  **traceback**.
 
 ### Demo
 
