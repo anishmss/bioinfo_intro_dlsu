@@ -1,4 +1,11 @@
 # Multiple sequence alignment
+
+## Sequences come in families
+Sequences come in families. They might be based on common recent ancestry, structural similarity, or functional similarity. 
+For example, in the previous hands-on, we looked at a family of ACE2 sequences. 
+Other examples are: protein domains, family of HIV *pol* poly-protein sequences from different HIV subtypes, families of different types of mobile genetic elements, family of trans-membrane proteins found on bacterial cell surfaces that have a [beta barrel](https://en.wikipedia.org/wiki/Beta_barrel) structure. 
+
+## Aligning multiple sequences
 Multiple sequence alignment (MSA) extends the idea of pairwise sequence alignment to more than 2 sequences. Like the pairwise case, an msa arranges sequences into columns of homologous residues.
 
 The figure below shown a portion of an MSA of ACE2 orthologs. You can see that one MSA of $n$ sequences provides a lot of information that would be hard to extract from pairwise alignments of all the $n(n-1)/2$ pairs.

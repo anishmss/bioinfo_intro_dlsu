@@ -1,0 +1,41 @@
+---
+title: "Code for linear model"
+output: html_notebook
+---
+
+
+Simple linear model for mdev-lstat
+
+
+```{r}
+library(MASS)
+plot(medv~lstat,data=Boston)
+```
+
+
+Add the fitted line.
+
+```{r}
+lm.boston <- lm(medv~lstat, data=Boston)
+
+
+plot(medv~lstat,data=Boston)
+
+abline(lm.boston,col="blue")
+summary(lm.boston)
+```
+
+Qualitative predictor
+
+```{r}
+library(ISLR)
+plot(Balance~Gender, data=Credit)
+
+```
+
+Fitting a linear model
+
+```{r}
+lm.Credit <- lm(Balance~Gender, data=Credit)
+summary(lm.Credit)
+```

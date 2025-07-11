@@ -29,9 +29,11 @@ parts:
     - file: chapters/sequence_alignment/local_alignments
     - file: chapters/sequence_alignment/hands_on_HIV
     - file: chapters/sequence_alignment/alignment_advanced_topics
-  - caption: "Multiple sequence alignment and profile HMM"
+  - caption: "Families of sequences: multiple sequence alignment and profile HMM"
     chapters:
     - file: chapters/msa/msa
+    - file: chapters/msa/profileHMM
+    - file: chapters/msa/hands-on-msa-profileHMM
   - caption: Phylogenetic analysis
     chapters:
     - file: chapters/phylogenetic/phylogenetic_analysis
@@ -40,4 +42,5 @@ parts:
     - file: chapters/gwas/gwas_intro
   - caption: Measuring and comparing gene expression 
     chapters:
+    - file: chapters/rna_seq/linear_models
     - file: chapters/rna_seq/rna_seq_intro
