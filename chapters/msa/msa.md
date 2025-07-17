@@ -3,7 +3,41 @@
 ## Sequences come in families
 Sequences come in families that share common evolutionary origin.
 For example, in the previous hands-on, we looked at a family of ACE2 sequences. 
-Other examples are: families of protein domains, families of proteins from different HIV subtypes, families of different types of mobile genetic elements, families of trans-membrane proteins found on bacterial cell surfaces that have a [beta barrel](https://en.wikipedia.org/wiki/Beta_barrel) structure, and so on. 
+
+Here is an example of a family of human cyclophilin proteins:
+```{figure} ./images/human_cyclophilin_family.png
+---
+name: human_cyclophilin_family
+width: 400px
+---
+A family of human cyclophilin proteins. \
+Source: (https://www.jalview.org/help/html/colourSchemes/clustal.html).
+```
+
+Here is a family of OmpA domain found in proteins that are localized in the outer membrane of many Gram-negative bacteria.
+```{figure} ./images/ompa_domain.png
+---
+name: ompa
+width: 400px
+---
+OmpA domain family.
+Source: PFAM PF00691 https://www.ebi.ac.uk/interpro/entry/pfam/PF00691/\
+```
+
+
+Here is the Tn3 family of mobile genetic elements found in many bacteria and known to carry anti-biotic resistance genes.
+
+```{figure} ./images/tn3_family.png
+---
+name: tn3_family
+width: 400px
+---
+Tn3 family of mobile genetic elements found in many bacteria. \
+Source: https://tncentral.ncc.unesp.br/TnPedia/index.php/Transposons_families/Tn3_family.\
+TnPedia Team. (2025). TnPedia – Chapter: The Tn3 Family of Prokaryotic Transposons. Zenodo. https://doi.org/10.5281/zenodo.15566224\
+```
+
+
 
 ## Aligning multiple sequences
 Multiple sequence alignment (MSA) extends the idea of pairwise sequence alignment to more than 2 sequences. 
@@ -19,9 +53,10 @@ name: ace2_msa_all
 The first 51 columns of a multiple sequence alignment of ACE2 orthologs, computed by MUSCLE, visualized by Jalview using the [Clustal color scheme](https://www.jalview.org/help/html/colourSchemes/clustal.html).
 ```
 
-# What is an MSA used for?
+## What is an MSA used for?
+An MSA is fundamental to studying the evolution of the family.
+Specifically, they can be used:
 
-Some applications are:
 - For computing nucleotide and amino acid substitution rates.
 - For building a profile hidden Markov model which is a statistical model of a family of sequences.
 - For building a phylogenetic tree, etc.
