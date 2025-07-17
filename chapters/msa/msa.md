@@ -11,7 +11,7 @@ name: human_cyclophilin_family
 width: 400px
 ---
 A family of human cyclophilin proteins. \
-Source: (https://www.jalview.org/help/html/colourSchemes/clustal.html).
+Source: (https://en.wikipedia.org/wiki/Protein_family#/media/File:Structural_coverage_of_the_human_cyclophilin_family.png).
 ```
 
 Here is a family of OmpA domain found in proteins that are localized in the outer membrane of many Gram-negative bacteria.
@@ -123,10 +123,10 @@ Their profile representation looks like:
 $
 \begin{array}{ccccc} 
   20             & 21             & 22             &  23            & 24              \\
-  \texttt{T}:5/6 & \texttt{I}:1/6 & \texttt{E}: 5/6& \texttt{E}: 5/6& \texttt{Q}:1/6 \\
-  \texttt{V}:1/6 & \texttt{T}:5/6 & \texttt{Q}: 1/6& \texttt{D}:1/6 & \texttt{L}:1/6\\
-                 &                &                &                & \texttt{E}:3/6\\
-                 &                &                &                & \texttt{-}:3/6
+  \texttt{T}: 5/6 & \texttt{I}: 1/6 & \texttt{E}: 5/6& \texttt{E}: 5/6& \texttt{Q}: 1/6 \\
+  \texttt{V}: 1/6 & \texttt{T}: 5/6 & \texttt{Q}: 1/6& \texttt{D}: 1/6 & \texttt{L}: 3/6\\
+                 &                &                &                & \texttt{E}: 1/6\\
+                 &                &                &                & \texttt{-}: 1/6
 \end{array}
 $
 

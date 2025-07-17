@@ -71,12 +71,12 @@ Source: https://www.ebi.ac.uk/interpro/entry/pfam/PF00049/entry_alignments/?type
 
 
 ### Viterbi path
-An alignment $A$ of a query sequence $X$ to a pHMMM is a path (sequence of state sequences) through the pHMM. 
-An alignment $A*$ that maximizes the joint probability $p(X,A^*|pHMM)$ is called a **Viterbi path**.
+An alignment $A$ of a query sequence $X$ to a pHMM is a path (sequence of state sequences) through the pHMM. 
+An alignment $A^*$ that maximizes the joint probability $p(X,A^*|pHMM)$ is called a **Viterbi path**.
 In our earlier foray into HMM, we discussed the **Viterbi algorithm** that computes $A^*$ and its probability .
 
 ### Full probability
-The probability of $A*$, although highest, can still be very small, since the space of alignments is large and typically there are going to be many alignments very similar to $A*$ with almost the same probability.  
+The probability of $A^*$, although highest, can still be very small, since the space of alignments is large and typically there are going to be many alignments very similar to $A^*$ with almost the same probability.  
 The **full probability** $p(X|pHMM)$ sums the probabilities of all alignments, and is often better than estimating a single uncertain alignment.
 As discussed earlier, this can be computed by the **forward algorithm**. 
 
