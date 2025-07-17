@@ -47,7 +47,7 @@ Applying some basic calculus, we can show that $\hat{\beta_{0}}$ and $\hat{\beta
 
 The variance estimate is:
 ```{math}
-\hat{\sigma}^2 = \frac{RSS}{n-2}. 
+\hat{\sigma}^2 = \frac{RSS}{n-2}.
 ```
 
 ## Estimating the standard errors

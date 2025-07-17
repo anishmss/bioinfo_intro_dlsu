@@ -25,7 +25,7 @@ Source:https://hivinfo.nih.gov/understanding-hiv/fact-sheets/hiv-life-cycle
 ```
 
 ### Antiretroviral therapy
-Antiretroviral therapy (ART) uses several kinds of drugs to keep HIV from multiplying. One class of ART drugs is called NRTI (Nucleoside Reverse Transcriptase Inhibitors), and as the name suggest, these interfere with the functioning of reverse transcriptase. 
+Antiretroviral therapy (ART) uses several kinds of drugs to keep HIV from multiplying. One class of ART drugs is called NRTI (Nucleoside Reverse Transcriptase Inhibitors), and as the name suggest, these interfere with the functioning of reverse transcriptase. The first drug approved for HIV ART use, Zidovudine (also called azidothymidine), falls in the NRTI class.
 
 ### Mutations and drug resistance 
 Mutations in the RT gene can lead to altered reverse transcriptase enzymes, which are no longer affected by the drugs. [Here](https://www.iasusa.org/wp-content/uploads/2025/03/33-2-mutations.pdf) is a catalog of drug resistant mutations including those conferring resistance to NRTIs. [Here](https://hivdb.stanford.edu/cgi-bin/PositionPhenoSummary.cgi) is another one. 
@@ -38,7 +38,7 @@ In recent years, high-throughput sequencers have been replacing the older Sanger
 [Here](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0164156) is one study that uses modern sequencers to  survey the levels of HIV drug resistance in ART-naive individuals. The sequence data they produced is available [here](https://ddbj.nig.ac.jp/search/entry/sra-study/SRP083085).
 
 ## Objective
-Identify and estimate the prevalence of HIV drug resistance mutations in an ART-naive individual by aligning sequence reads of HIV genome obtained from the patient to the reference HIV genome HXB2.
+Identify and estimate the prevalence of HIV drug resistance mutations in an ART-naive individual by aligning sequence reads of HIV genome obtained from a patient to the reference HIV genome HXB2.
 
 ## Method
 - Get HIV sequence data from 1 patient from the study above. This will be in [fastq](https://en.wikipedia.org/wiki/FASTQ_format) format. 
@@ -47,7 +47,7 @@ Identify and estimate the prevalence of HIV drug resistance mutations in an ART-
     - Compute a suffix array of the reference using `lastdb`.
     - Train the scoring scheme using `last-train`.
     - Perform local alignment of reads to the reference using `lastal`.
-    - Write a script to go through the sites of interest relevant to NRTI resistance, and report on mutations you can identify. 
+    - Write a script to go through the sites of interest relevant to NRTI resistance (to make things simpler, you can just choose one drug e.g. zidovudine), and report on the mutations you can identify. 
 
 ## References
 - John Herron, Scott Freeman, Chapter 1: A Case for Evolutionary Thinking: Understanding HIV, Evolutionary Analysis, Fifth Edition (2015), Pearson.

@@ -3,7 +3,7 @@
 
 title: Bioinformatics Guide
 author: Anish M.S. Shrestha
-copyright: "This work is shared under a [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license."
+copyright: "This work is shared under a CC BY-NC-SA 4.0 license."
 logo: 'lab_logo.png'
 
 # Force re-execution of notebooks on each build.

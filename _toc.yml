@@ -37,10 +37,11 @@ parts:
   - caption: Phylogenetic analysis
     chapters:
     - file: chapters/phylogenetic/phylogenetic_analysis
-  - caption: Genome-wide association studies
-    chapters:
-    - file: chapters/gwas/gwas_intro
   - caption: Measuring and comparing gene expression 
     chapters:
     - file: chapters/rna_seq/linear_models
     - file: chapters/rna_seq/rna_seq_intro
+  - caption: Genome-wide association studies
+    chapters:
+    - file: chapters/gwas/gwas_intro
+
