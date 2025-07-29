@@ -39,6 +39,7 @@ Transcription zoomed in to sequence level \
 Source: https://commons.wikimedia.org/wiki/File:Transcription_label_en_%28cropped%29.jpg
 ```
 
+(eukaryotic-transcription)=
 ### Eukaryotes
 In eukaryotes, DNA is first transcribed into **premature RNA** or **precursor RNA** or **nascent RNA**. 
 Different to prokaryotes, three types of RNA polymerases are employed depending on the gene being transcribed. Also, since eukaryotic DNA is organized inside its nucleus, transcription happens inside the nucleus.
