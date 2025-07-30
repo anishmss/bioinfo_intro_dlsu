@@ -54,9 +54,9 @@ where $\bar{x}$ and  $\bar{y}$  are the sample means.
 
 The estimator of the variance $\sigma^2$ is:
 ```{math}
-s^2 = \frac{RSS}{n-2},
+s^2 = \frac{RSS}{n-2}.
 ```
-where the $n-2$ indicates 
+
 
 ## Estimating the standard errors
 Assuming that there exist true $\beta_{0}$,$\beta_{1}$, we wish to estimate how accurate the 

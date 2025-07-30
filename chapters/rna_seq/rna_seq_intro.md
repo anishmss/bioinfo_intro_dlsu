@@ -10,7 +10,7 @@ width: 400px
 A typical study design where gene expression is compared across case and control samples..
 ```
 
-There are many traditional lab techniques to quantitate gene expression, which is the abundance of mature RNA transcribed from a gene (e.g. ). Here we will focus on a [relatively new](https://doi.org/10.1038/s41576-019-0150-2) technology called RNA-seq, which utilizes modern sequencers to sequence all RNA molecules present in the specimen. 
+There are many traditional lab techniques to quantitate gene expression, which is the abundance of mature RNA transcribed from a gene (e.g. variants of PCR, [microarray](https://www.nature.com/scitable/definition/microarray-202/)). Here we will focus on a [relatively new](https://doi.org/10.1038/s41576-019-0150-2) technology called RNA-seq, which utilizes modern sequencers to sequence all RNA molecules present in the specimen. 
 
 ## RNA-seq and the data-generation process
 The typical  data generation process of RNA-seq goes as follows (see figure below). From a biological sample, [mature RNA](eukaryotic-transcription)is extracted. Ribosomal RNA (rRNA) make up a vast majority (80-90%) of RNA in a cell, and it is excluded them from extraction by selectively degrading them or selectively extract only RNAs with a [poly-A tail](https://www.nature.com/scitable/definition/.poly-a-tail-276/) while rRNAs don't have such tails. This can be used as signatures to selective extraction. There are also techniques to selectively degrade rRNA. Next, the RNA molecules are fragmented, and  double-stranded cDNA molecules are synthesized from the RNA fragments. The cDNA are sequenced using a high-throughput sequencer, resulting in a huge sequence dataset.
@@ -56,12 +56,12 @@ E[Y|x] &= \beta_{0} + \beta_{1} x \\
 Var (Y|x) &= {\sigma}^2.
 \end{align*}
 
-After estimating $\beta_{0}$,  $\beta_{1}$, and var (Y_{g}|x), and their standard errors, from observed expression data, we could test the null hypothesis that the gene $g$ is not differentially expressed by testing the null hypothesis that $\beta_{1}=0$. 
+After estimating $\beta_{0}$,  $\beta_{1}$, and var (Y|x), and their standard errors, from observed expression data, we could test the null hypothesis that the gene $g$ is not differentially expressed by testing the null hypothesis that $\beta_{1}=0$. 
 
-However, this model violates some of the assumptions of the simple linear model which are needed for reliable hypothesis testing and confidence interval computation. First, $Y_g|x$ represents discrete counts and is not described by a normal distribution. Next $Y_g|x$ do not all have equal variances. It is typical for random variables representing counts to have a mean-variance relation in which the larger the mean, larger the variance. Another reason for unequal variances could be that disease samples exhibit more variability than normal ones.
+However, this model violates some of the assumptions of the simple linear model which are needed for reliable hypothesis testing and confidence interval computation. First, $Y|x$ represents discrete counts and is not described by a normal distribution. Next $Y|x$ do not all have equal variances. It is typical for random variables representing counts to have a mean-variance relation in which the larger the mean, larger the variance. Another reason for unequal variances could be that disease samples exhibit more variability than normal ones.
 
 
-### Dealing with unequal variances
+### Dealing with unequal variances and non-normality
 One technique to deal with unequal variances and non-normal distribution is data transformation. The idea is to log-transform the response variable, and fit a linear model on the transformed data. In the case of RNA-seq, we define $Y_{x}$ in the model to represent the log of read counts (instead of raw counts) normalized by sequencing depth.
 
 More formally, let $r_{gi}$ be the number of reads mapped to gene $g$ in the $i$-th sample. 
@@ -73,7 +73,7 @@ Then **log-counts per million** are defined as:
 ```{math}
 y_{gi} = \log_2 \left( \frac{r_{gi}+0.5}{R_i + 1.0} \times 10^6 \right).
 ```
-The offset of 0.5 in the numerator prevents log of zero, and the offset of 1 in the denominator ensures the ratio is between 0 and 1. The $y_{gi}$ will serve as the response variable.
+The offset of 0.5 in the numerator prevents log of zero, and the offset of 1 in the denominator ensures the ratio is between 0 and 1. The $y_{gi}$ will serve as an instance of the response variable.
 
 Another way to deal with unequal variance is to weigh the observations based on their precision.
 
@@ -100,7 +100,7 @@ To get a feel for the seriousness, let's look at some numbers. Suppose you decid
 \begin{align*}
 p(\text{ 1 or more significant result}) &=  1 - p(\text{no significant result}) \\
                                      &=  1 - (1-0.05)^{20} \\
-                                     &=  0.64
+                                     &=  0.64.
 \end{align*}
 ```
 This error rate has a fancy name: **family-wise error rate**.
@@ -134,7 +134,7 @@ Let $q^*$ be the user-set FDR.
 Steps:
 1. Sort the p-values in non-increasing order: $p_{(1)} \leq p_{(2)}\leq \cdots \leq p_{(m)}$.
 2. Let $k$ be the largest index $i$ such that $p_{(i)} \leq \frac{i}{m}q*$.
-3. Reject the corresponding hypotheses $H_{(1)}, H_{(2)}, \ldots H_{(k)}$.
+3. Reject the corresponding hypotheses $H_{(1)}, H_{(2)}, \ldots, H_{(k)}$.
 ````
 
 Here is [another method](https://doi.org/10.1073/pnas.1530509100) for multiple testing correction, which claims to be more suitable for genome-wide studies, like RNA-seq, that generate thousands of hypotheses.
